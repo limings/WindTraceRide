@@ -1,5 +1,9 @@
 # Wind Trace Ride
 
+<p align="center">
+  <img src="Assets/Branding/AppIcon.png" alt="Wind Trace Ride 游戏图标：骑行者沿湖畔小径驶向风车小镇" width="192" height="192">
+</p>
+
 **踩动单车，追随风，穿过湖畔、峡谷与风车小镇。**
 
 Wind Trace Ride 是一款公开源码的室内骑行冒险游戏。连接蓝牙动感单车后，你的踏频会驱动角色踩踏与前进；在沿途收集风能、保持节奏、完成挑战，让每一次室内骑行都有一段可以抵达的旅程。

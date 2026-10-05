@@ -10,6 +10,7 @@ namespace WindTraceRide.Editor
     {
         public static void BuildDevelopmentApk()
         {
+            AppIconConfiguration.Apply();
             ReferenceWorldValidation.PrepareShaders();
             var output = ReadArgument("-buildOutput") ?? "Builds/Android/WindTraceRide-dev.apk";
             PlayerSettings.companyName = "Wind Trace Studio";
