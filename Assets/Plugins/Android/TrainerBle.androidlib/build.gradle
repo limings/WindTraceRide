@@ -1,0 +1,20 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.windtraceride.ble'
+    compileSdk 36
+    buildToolsVersion '36.0.0'
+
+    defaultConfig {
+        minSdk 23
+    }
+}
+
+dependencies {
+    // Unity places its Java bridge here in generated Android projects. The
+    // parent unityLibrary supplies it at runtime; this module needs it only to
+    // compile UnityPlayer.currentActivity and UnitySendMessage references.
+    compileOnly files('../libs/unity-classes.jar')
+}

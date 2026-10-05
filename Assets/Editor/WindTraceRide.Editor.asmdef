@@ -1,0 +1,8 @@
+{
+  "name": "WindTraceRide.Editor",
+  "rootNamespace": "WindTraceRide.Editor",
+  "references": ["WindTraceRide.Bootstrap", "WindTraceRide.Core"],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

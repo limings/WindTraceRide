@@ -1,0 +1,14 @@
+{
+  "name": "WindTraceRide.Tests.EditMode",
+  "rootNamespace": "WindTraceRide.Tests",
+  "references": [
+    "WindTraceRide.Core",
+    "WindTraceRide.Bootstrap"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

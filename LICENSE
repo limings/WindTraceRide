@@ -1,0 +1,57 @@
+Wind Trace Ride Personal Noncommercial License
+Version 1.0
+
+Copyright (c) 2026 limings and the respective contributors.
+
+1. Scope
+
+This license applies to the original Wind Trace Ride source code and exported
+art assets included in this repository, except files and components that have
+their own license notices. Blender prototypes, source project files and private
+production materials are not included in this distribution.
+
+2. Personal noncommercial permission
+
+Individuals may use, study, copy, build and modify the covered materials free
+of charge solely for their own personal, noncommercial purposes. Repository
+forks for these purposes are permitted. Copyright, license and attribution
+notices must be retained. Modifications must not be represented as official
+releases of the project.
+
+3. Commercial use
+
+Any use for profit or commercial operations requires prior written permission
+from the relevant project rights holder. This includes selling the game or a
+modified version, including it in paid fitness services, integrating it into
+commercial products or equipment, or otherwise using it to support commercial
+operations. Commercial use by an individual is also subject to this requirement.
+No commercial permission is granted by the availability of this repository.
+
+To request commercial permission, contact the project maintainer through the
+repository's issue tracker. The scope and conditions of any commercial license
+must be agreed in writing.
+
+4. Other rights
+
+Rights not expressly granted by this license are reserved. In particular,
+redistribution beyond repository forks for personal noncommercial purposes
+requires separate permission. This license does not grant rights to use the
+project's name or branding to imply endorsement by its maintainers.
+
+5. Third-party materials
+
+Third-party components, music, geographic data and files carrying separate
+license notices remain governed by their respective licenses. This license
+does not replace or restrict rights granted under those separate licenses.
+
+6. Disclaimer
+
+THE COVERED MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHORS AND COPYRIGHT HOLDERS
+ARE NOT LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE
+MATERIALS OR THEIR USE.
+
+This is a source-available license with a commercial-use restriction. It is
+not the Apache License 2.0 or an OSI-approved open-source license.

@@ -1,0 +1,11 @@
+plugins {
+    // Unity 6000.0 ships Gradle 8.11, which supports this AGP patch release.
+    id 'com.android.application' version '8.7.3' apply false
+    id 'com.android.library' version '8.7.3' apply false
+    **BUILD_SCRIPT_DEPS**
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.layout.buildDirectory
+}
+

@@ -1,0 +1,21 @@
+{
+  "source": "USGS 3DEP Bare Earth DEM Dynamic Service",
+  "sourceUrl": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer",
+  "license": "Public Domain (USGS 3DEP)",
+  "boundsWgs84": {
+    "xmin": -120.2175,
+    "ymin": 39.075,
+    "xmax": -120.1075,
+    "ymax": 39.185,
+    "spatialReference": {
+      "wkid": 4326,
+      "latestWkid": 4326
+    }
+  },
+  "originLatitude": 39.13,
+  "originLongitude": -120.1625,
+  "baseElevationMeters": 1880.0,
+  "metersPerLongitudeDegree": 86352.71398355467,
+  "metersPerLatitudeDegree": 111320,
+  "gridCells": 256
+}
