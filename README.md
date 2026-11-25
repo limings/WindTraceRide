@@ -1,24 +1,26 @@
 # Wind Trace Ride
 
+简体中文 · [English](README.en.md)
+
 <p align="center">
   <img src="Assets/Branding/AppIcon.png" alt="Wind Trace Ride 游戏图标：骑行者沿湖畔小径驶向风车小镇" width="192" height="192">
 </p>
 
 **踩动单车，追随风，穿过湖畔、峡谷与风车小镇。**
 
-Wind Trace Ride 是一款公开源码的室内骑行冒险游戏。连接蓝牙动感单车后，你的踏频会驱动角色踩踏与前进；在沿途收集风能、保持节奏、完成挑战，让每一次室内骑行都有一段可以抵达的旅程。
+Wind Trace Ride 是一款 Android 室内骑行冒险游戏。用蓝牙动感单车的踏频驱动角色前进，沿途收集风能、保持节奏、完成挑战。
 
-游戏基于 Unity 6，面向 Android 手机和平板的横屏体验。角色、自行车和场景美术使用 Blender 制作。公开仓库包含游戏源码与运行所需的导出模型、纹理等资源；Blender 原型、工程文件及内部制作资料保留私有。没有动感单车，也可以通过内置体验模式探索游戏。
+**[Android 体验版发布页](https://github.com/limings/WindTraceRide/releases)** · [从源码试玩](#从源码运行) · [反馈单车兼容性](https://github.com/limings/WindTraceRide/issues/new?template=bike-compatibility.md)
+
+**没有单车也能玩。** 在游戏设置里点击「开启体验模式 · 模拟骑行」，回到主页选一条路线即可开始。Android 安装包正在准备，期间可以通过 Unity 编辑器试玩。
+
+![太浩湖畔：角色沿湖岸骑行，界面显示踏频、功率、计时与路线进度](docs/screenshots/tahoe-lakeside.png)
 
 **个人非商业使用免费；商业使用须事先取得项目权利人的书面授权。** 详细范围见[使用许可与来源](#使用许可与来源)。
 
 ## 游戏截图
 
 以下为 Android 平板上运行开发版本时的游戏截图，使用体验模式的模拟骑行数据。画面展示开发过程中的版本，后续可能继续调整。
-
-**太浩湖畔 · 湖岸与森林小径**
-
-![太浩湖畔：角色沿湖岸骑行，界面显示踏频、功率、计时与路线进度](docs/screenshots/tahoe-lakeside.png)
 
 **风之峡谷 · 穿越峡谷风桥**
 
@@ -55,12 +57,12 @@ Wind Trace Ride 是一款公开源码的室内骑行冒险游戏。连接蓝牙�
 
 ### 蓝牙协议
 
-| 协议 / 设备 | 当前接入方式 |
-| --- | --- |
-| 标准 FTMS 室内单车 | 读取 Fitness Machine Service 的 Indoor Bike Data |
-| YESOUL S1 旧协议 | 读取 YESOUL `0xFFF0` 服务的骑行数据 |
+| 协议 / 设备 | 当前接入方式 | 公开体验版验证进度 |
+| --- | --- | --- |
+| 标准 FTMS 室内单车 | 读取 Fitness Machine Service 的 Indoor Bike Data | 征集具体车型的实测结果 |
+| 野小兽 YESOUL S1 旧协议 | 读取 YESOUL `0xFFF0` 服务的骑行数据 | 征集 S1 车主的固件和骑行反馈 |
 
-不同型号和固件提供的数据可能不同。实现了协议解析并不意味着所有同协议设备均已完成实机验证，欢迎反馈兼容情况。
+不同型号和固件提供的数据可能不同。欢迎反馈车型、连接结果和踏频变化是否跟得上实际踩踏。[填写兼容性反馈](https://github.com/limings/WindTraceRide/issues/new?template=bike-compatibility.md)
 
 目前游戏读取骑行数据，不自动调整设备阻力。YESOUL S1 的阻力由车上的机械旋钮手动调节。
 
@@ -72,7 +74,7 @@ Wind Trace Ride 是一款公开源码的室内骑行冒险游戏。连接蓝牙�
 | Unity Editor | 可通过模拟单车或体验模式运行 |
 | Windows / iOS | 原生蓝牙接入尚未实现 |
 
-## 快速开始
+## 从源码运行
 
 ### 开发环境
 
@@ -121,7 +123,7 @@ $projectRoot = (Get-Location).Path
 
 默认输出为 `Builds/Android/WindTraceRide-dev.apk`。可用 `-buildOutput` 指定其他输出路径。运行批处理构建前，关闭正在打开同一项目的 Unity 编辑器。
 
-该入口构建的是用于测试的开发版本；正式发行时需另行配置发布构建与签名。
+该入口生成用于测试的开发版本。
 
 ## 项目结构
 
@@ -165,6 +167,8 @@ ProjectSettings/        Unity 项目配置
 提交代码时，请保留 Unity `.meta` 文件；涉及协议或骑行逻辑的修改应补充对应测试。较大的玩法或架构调整，建议先通过 Issue 讨论。
 
 ## 使用许可与来源
+
+游戏基于 Unity 6，角色、自行车和场景美术使用 Blender 制作。公开仓库包含游戏源码及运行所需的导出模型和纹理。Blender 原型和制作工程由项目保留。
 
 本项目采用“个人非商业使用免费，商业使用另行授权”的使用许可，完整条款见 [LICENSE](LICENSE)。
 
