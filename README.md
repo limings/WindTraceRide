@@ -10,9 +10,9 @@
 
 Wind Trace Ride 是一款 Android 室内骑行冒险游戏。用蓝牙动感单车的踏频驱动角色前进，沿途收集风能、保持节奏、完成挑战。
 
-**[Android 体验版发布页](https://github.com/limings/WindTraceRide/releases)** · [从源码试玩](#从源码运行) · [反馈单车兼容性](https://github.com/limings/WindTraceRide/issues/new?template=bike-compatibility.md)
+**[下载 Android 体验版 APK](https://github.com/limings/WindTraceRide/releases/download/v1.0.0-preview.1/WindTraceRide-1.0.0-preview.1.apk)** · [18 秒试玩录屏](https://github.com/limings/WindTraceRide/releases/download/v1.0.0-preview.1/WindTraceRide-demo.mp4) · [版本说明](https://github.com/limings/WindTraceRide/releases/tag/v1.0.0-preview.1) · [反馈单车兼容性](https://github.com/limings/WindTraceRide/issues/new?template=bike-compatibility.md)
 
-**没有单车也能玩。** 在游戏设置里点击「开启体验模式 · 模拟骑行」，回到主页选一条路线即可开始。Android 安装包正在准备，期间可以通过 Unity 编辑器试玩。
+**没有单车也能玩。** 首次打开游戏，在骑行设置里点击「开启体验模式 · 模拟骑行」，然后选择路线。安装包面向 Android 6.0 及以上的 64 位 ARM 手机和平板。
 
 ![太浩湖畔：角色沿湖岸骑行，界面显示踏频、功率、计时与路线进度](docs/screenshots/tahoe-lakeside.png)
 
@@ -124,6 +124,8 @@ $projectRoot = (Get-Location).Path
 默认输出为 `Builds/Android/WindTraceRide-dev.apk`。可用 `-buildOutput` 指定其他输出路径。运行批处理构建前，关闭正在打开同一项目的 Unity 编辑器。
 
 该入口生成用于测试的开发版本。
+
+维护者构建签名体验版时，使用 `WindTraceRide.Editor.AndroidBuild.BuildPreviewApk`。在当前进程的环境中提供 `WIND_TRACE_RIDE_KEYSTORE`、`WIND_TRACE_RIDE_KEYSTORE_PASSWORD`、`WIND_TRACE_RIDE_KEY_ALIAS` 和 `WIND_TRACE_RIDE_KEY_PASSWORD`。同一应用的后续更新沿用已发布 APK 的签名密钥。
 
 ## 项目结构
 
